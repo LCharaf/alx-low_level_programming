@@ -2,23 +2,25 @@
 
 
 /**
- * main - program that prints the alphabet in lowercase and upper case
+ * main - entry point
+ *
+ * description: print all single digit numbers
  *
  * Return: Always 0.
  */
 
 int main(void)
 {
-	char letter;
+	int digit = 0;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
+	while (digit <=9)
 
 	{
-	if (letter != 'e' && letter != 'q')
-	putchar(letter);
+	printf("%i", digit);
+	digit++;
 	}
 
-	putchar('\n');
+	printf("\n");
 
 	return (0);
 }
